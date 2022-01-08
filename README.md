@@ -1,7 +1,7 @@
 # Spotify Crack - Chrome App
 <h2>For MacOS, Windows & Linux
 
-##What's New:
+## What's New:
 
 - Removed all ads
 - No need to skip ads
