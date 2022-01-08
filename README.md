@@ -7,8 +7,8 @@
 - No need to skip ads
 - Removed premium and install buttons😁
 
-![](../../../../var/folders/6x/46lvgp0d2h74612rnzf02wbc0000gn/T/TemporaryItems/NSIRD_screencaptureui_TjUeHh/Screenshot 2022-01-08 at 9.26.57 AM.png)
-
+<img width="1440" alt="Screenshot 2022-01-08 at 9 34 45 AM" src="https://user-images.githubusercontent.com/83419951/148630845-7035d19b-895b-4b5b-aca4-ac5f61432391.png">
+  
 ## How to install
 
 1. Clone or download this repo into a folder.
