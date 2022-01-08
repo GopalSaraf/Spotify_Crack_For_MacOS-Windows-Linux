@@ -1,0 +1,3 @@
+button[title="Upgrade to Premium"], button[title="Effettua l'upgrade a Premium"], div[data-testid="test-ref-div"], a[href="/download"], a[href="https://www.spotify.com/premium/"] {
+    display:none !important;
+}

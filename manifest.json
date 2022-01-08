@@ -1,0 +1,22 @@
+{
+
+   "background": {
+      "scripts": [ "js/background.js" ]
+
+   },
+   "content_scripts": [
+      {
+        "matches": ["https://open.spotify.com/*"],
+        "css" : ["style.css"]
+      }
+  ],
+
+   "description": "Spotify Crack!",
+   "icons": {
+      "128": "img/icon.png"
+   },
+   "manifest_version": 2,
+   "name": "Spotify Crack",
+   "permissions": [ "webRequest", "webRequestBlocking", "*://open.spotify.com/*", "*://audio-ak-spotify-com.akamaized.net/*", "https://*.googlesyndication.com/*", "*://audio-akp-quic-spotify-com.akamaized.net/*", "*://gae-spclient.spotify.com/*", "*://*.audio-fa.scdn.co/*"],
+   "version": "1.0"
+}
