@@ -18,3 +18,4 @@
 4. Open Spotify Web and open chrome `Options > More Tools > Create Shortcut...`
 5. Check `Open as window` & hit Create
 6. Open Spotify as App
+7. Don't delete folder containing repo else it won't work.
