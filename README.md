@@ -2,7 +2,7 @@
 
 ## For MacOS, Windows & Linux
 
-**Please Note:** This repository is not maintained and will not work as Spotify has been updated.
+**Please Note:** This repository is not maintained and may not work as Spotify has been updated.
 
 ## What's New:
 
