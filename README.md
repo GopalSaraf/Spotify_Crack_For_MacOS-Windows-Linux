@@ -1,5 +1,8 @@
 # Spotify Crack - Chrome App
-<h2>For MacOS, Windows & Linux
+
+## For MacOS, Windows & Linux
+
+**Please Note:** This repository is not maintained and will not work as Spotify has been updated.
 
 ## What's New:
 
