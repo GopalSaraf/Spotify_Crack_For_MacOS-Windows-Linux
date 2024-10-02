@@ -36,24 +36,23 @@ function getSongArtist() {
 function replaceLyrics(lyrics) {
     const lyricBoxClassName = "jakasnazwaklasyitaktegoniktnieczytaxd";
     const lyricBoxSelector = `.${lyricBoxClassName}`;
-    document.querySelectorAll('[data-testid="fullscreen-lyric"]')[0].parentElement.classList.add(lyricBoxClassName);
+    const lyricBox = document.querySelectorAll('[data-testid="fullscreen-lyric"]');
 
-    const lyricBox = document.querySelector(lyricBoxSelector);
+    if (lyricBox != undefined && lyricBox.length > 0) {
+        lyricBox[0].parentElement.classList.add(lyricBoxClassName);
 
-    if (lyricBox.length > 0) {
         for (let i = 1; i < lyricBox.length; i++) {
             lyricBox[i].style.zIndex = "-100";
         }
+
+        const styleSheet = document.styleSheets[0];
+        styleSheet.insertRule(`${lyricBoxSelector}:after { bottom: unset!important; }`);
+        for (i = 3; i <= 5; i++)
+            styleSheet.insertRule(`div.main-view-container__scroll-node-child > main > div > div:nth-child(${i}) { z-index: -100; }`);
+
+        lyricBox.innerHTML = lyrics;
+        lyricBox.style.color = "var(--lyrics-color-active)";
     }
-
-
-    const styleSheet = document.styleSheets[0];
-    styleSheet.insertRule(`${lyricBoxSelector}:after { bottom: unset!important; }`);
-    for (i = 3; i <= 5; i++)
-        styleSheet.insertRule(`div.main-view-container__scroll-node-child > main > div > div:nth-child(${i}) { z-index: -100; }`);
-
-    lyricBox.innerHTML = lyrics;
-    lyricBox.style.color = "var(--lyrics-color-active)";
 }
 
 function updateLyrics() {
@@ -71,7 +70,10 @@ function updateLyrics() {
 window.onload = () => {
     var timer = setInterval(() => {
         try {
-            document.querySelector("#main > div > div > div > footer > div > div > div > button:nth-child(2)").addEventListener("click", updateLyrics);
+            const button = document.querySelector("#main > div > div > div > footer > div > div > div > button:nth-child(2)");
+            if (button != undefined) {
+                button.addEventListener("click", updateLyrics);
+            }
             clearInterval(timer);
         } catch (error) {
             console.log(error);
