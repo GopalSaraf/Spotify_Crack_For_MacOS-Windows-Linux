@@ -5,7 +5,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/1sec.mp3"
+                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/point1sec.mp3"
             }
         },
         "condition": {
@@ -21,7 +21,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/1sec.mp3"
+                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/point1sec.mp3"
             }
         },
         "condition": {
@@ -37,7 +37,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/1sec.mp3"
+                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/point1sec.mp3"
             }
         },
         "condition": {
@@ -53,7 +53,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/1sec.mp3"
+                "url": "https://raw.githubusercontent.com/texnikru/blank-mp3s/master/point1sec.mp3"
             }
         },
         "condition": {
