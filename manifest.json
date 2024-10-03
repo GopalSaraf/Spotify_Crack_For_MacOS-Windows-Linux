@@ -1,22 +1,42 @@
 {
-
-   "background": {
-      "scripts": [ "js/background.js" ]
-
-   },
-   "content_scripts": [
-      {
-        "matches": ["https://open.spotify.com/*"],
-        "css" : ["style.css"]
-      }
-  ],
-
-   "description": "Spotify Crack!",
+   "manifest_version": 3,
+   "name": "Assume We Premium",
+   "version": "1.0",
+   "description": "Spotify Ads Skipper. Just assume we are on Premium. + Lyrics back by maalos",
    "icons": {
       "128": "img/icon.png"
    },
-   "manifest_version": 2,
-   "name": "Spotify Crack",
-   "permissions": [ "webRequest", "webRequestBlocking", "*://open.spotify.com/*", "*://audio-ak-spotify-com.akamaized.net/*", "https://*.googlesyndication.com/*", "*://audio-akp-quic-spotify-com.akamaized.net/*", "*://gae-spclient.spotify.com/*", "*://*.audio-fa.scdn.co/*"],
-   "version": "1.0"
+   "content_scripts": [
+      {
+         "matches": [
+            "https://open.spotify.com/*"
+         ],
+         "css": [
+            "style.css"
+         ],
+         "js": [
+            "js/content.js"
+         ]
+      }
+   ],
+   "host_permissions": [
+      "*://open.spotify.com/*",
+      "*://audio-ak-spotify-com.akamaized.net/*",
+      "https://*.googlesyndication.com/*",
+      "*://audio-akp-quic-spotify-com.akamaized.net/*",
+      "*://gae-spclient.spotify.com/*",
+      "*://*.audio-fa.scdn.co/*"
+   ],
+   "permissions": [
+      "declarativeNetRequest"
+   ],
+   "declarative_net_request": {
+      "rule_resources": [
+         {
+            "id": "sptfads_rules",
+            "enabled": true,
+            "path": "rules.json"
+         }
+      ]
+   }
 }
